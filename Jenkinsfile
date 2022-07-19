@@ -10,13 +10,13 @@ pipeline {
         
         stage('Initialize') {
             steps {
-                bat 'python init.py'
+                sh 'python init.py'
             }
         }
         
         stage('Deploy') {
             steps {
-                bat 'python deploy.py'
+                sh 'python deploy.py'
             }
         }
         
